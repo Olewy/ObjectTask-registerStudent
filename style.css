@@ -1,0 +1,66 @@
+body {
+  height: 100vh;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 2rem;
+}
+
+.heading {
+  margin: 0 0 1rem 0;
+}
+
+.data-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 18rem;
+}
+
+input,
+select {
+  margin-bottom: 1rem;
+}
+
+.btn-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+button:hover {
+  background-color: lightblue;
+  border: none;
+  border-radius: 5px;
+}
+
+.studentData {
+  margin-top: 5rem;
+}
+
+.database-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#studentData {
+  color: blueviolet;
+}
+
+.heading-database {
+  text-decoration: underline;
+}

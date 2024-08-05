@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studen registration (obejct task)</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="registration">
+        <h1 class="heading">Register a student</h1>
+        <div class="data-wrapper">
+          <span>First name:</span>
+          <input placeholder="Max" id="addFirstName" type="text" />
+        </div>
+        <div class="data-wrapper">
+          <span>Lastname:</span>
+          <input placeholder="Mustermann" id="addLastName" type="text" />
+        </div>
+        <div class="data-wrapper">
+          <span>Age:</span> <input placeholder="18" id="addAge" type="number" />
+        </div>
+        <div class="data-wrapper">
+          <span>Class:</span>
+          <select name="class" id="addClass">
+            <option value="">--choose a class--</option>
+            <option value="1.">1.</option>
+            <option value="2.">2.</option>
+            <option value="3.">3.</option>
+            <option value="4.">4.</option>
+          </select>
+        </div>
+        <div class="data-wrapper">
+          <span>englisch(grade):</span>
+          <input
+            placeholder="1-6 without +/-"
+            id="addEnglishGrade"
+            type="number"
+          />
+        </div>
+        <div class="data-wrapper">
+          <span>german(grade):</span>
+          <input
+            placeholder="1-6 without +/-"
+            id="addGermanGrade"
+            type="number"
+          />
+        </div>
+        <div class="data-wrapper">
+          <span>math(grade):</span>
+          <input
+            placeholder="1-6 without +/-"
+            id="addMathGrade"
+            type="number"
+          />
+        </div>
+        <div class="btn-wrapper">
+          <button onclick="registerStudent()">create</button>
+          <button onclick="showStudentData()">show</button>
+        </div>
+      </section>
+
+      <section class="studentData">
+        <div class="database-wrapper">
+          <h2 class="heading heading-database">Database:</h2>
+          <p id="studentData"></p>
+        </div>
+        <div class="studentImage"></div>
+      </section>
+    </main>
+    <script type="text/javascript" lang="javascript" src="main.js"></script>
+  </body>
+</html>

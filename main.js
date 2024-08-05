@@ -32,6 +32,7 @@ function registerStudent() {
 
   console.log(student);
   addMessage();
+  resetStudentPicture();
 }
 
 function showStudentData() {
@@ -39,13 +40,26 @@ function showStudentData() {
   document.getElementById(
     "studentData"
   ).innerHTML = `Name: ${student.firstName} <br><br>Nachname: ${student.lastName} <br><br>Age: ${student.age} <br><br>Schoolclass: ${student.class} <br><br>English grade: ${student.score.english}  <br><br>german grade: ${student.score.german} <br><br>Math grade: ${student.score.math}`;
+  showStudentPicture();
 }
 
 function addMessage() {
   if (student.firstName == "") {
     document.getElementById("studentData").innerHTML = "";
+    resetStudentPicture();
   } else {
     document.getElementById("studentData").innerHTML =
       "Congrats - New student has been added to the database!";
+    resetStudentPicture();
   }
+}
+
+function showStudentPicture() {
+  document.getElementById(
+    "studentImage"
+  ).innerHTML = `<img src="img/schüler.jpg" alt="">`;
+}
+
+function resetStudentPicture() {
+  document.getElementById("studentImage").innerHTML = `<img src="" alt="">`;
 }
